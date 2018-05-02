@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/static/css/bootstrap.css" rel="stylesheet">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2> Cricket Blog</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Rajasthan Royals won by 3 wkts</h2>
+      <h5>PLAYER OF THE MATCH <a href="http://www.cricbuzz.com/profiles/11540/jofra-archer">Jofra Archer</a></h5>
+      <div class="fakeimg"><img  alt="img" class="img-responsive img-rounded" src="http://i.cricketcb.com/i/news/fth/595x397/stories/2018/apr/23//prv_1524448342.jpeg"></div>
+      <p>Some text..</p>
+      <p>Keep all those heart patients away. Another night, another thriller, another chase from nowhere. Mumbai have done their usual bit of warming up, Rajasthan of keeping a fortress.<a href="http://www.cricbuzz.com/live-cricket-scores/20081/rr-vs-mi-21st-match-indian-premier-league-2018">Read more</a></p>
+    </div>
+    <div class="card">
+      <h2>Chennai Super Kings won by 4 runs</h2>
+      <h5>PLAYER OF THE MATCH <a href="http://www.cricbuzz.com/profiles/6311/ambati-rayudu">Ambati Rayudu</a></h5>
+       <div class="fakeimg"><img alt="img" class="img-responsive img-rounded" src="http://i.cricketcb.com/i/news/fth/595x410/stories/2018/apr/22//prv_1524407901.jpeg"></div>
+      <p>That's it from this one. The second match is almost underway. Join us there. This is Sagar Chawla signing off with Akshay Maanay, Nikhil Jadhav, Pradeep<a href="http://www.cricbuzz.com/live-cricket-scores/20080/srh-vs-csk-20th-match-indian-premier-league-2018">Read more</a></p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg"><img  alt="img" class="img-responsive img-rounded" src="static/images/pradeep.jpg"></div>
+      <p><a href="https://www.facebook.com/pradeepkumar.burugu">follow me</a></p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <h4 style="color: blue"><a href="http://www.cricbuzz.com/cricket-news/101706/csk-survive-kane-williamson-special-to-beat-srh-clinch-top-spot-in-ipl-2018">CSK survive Williamson special to clinch top spot</a></h4>
+      <div class="fakeimg"><img alt="img" class="img-responsive img-rounded" src="http://i.cricketcb.com/i/news/fth/595x410/stories/2018/apr/22//prv_1524407901.jpeg"></div><br>
+      <h4 style="color: blue"><a href="http://www.cricbuzz.com/cricket-news/101707/ipl-2018-delhi-daredevils-home-leg-kings-xi-punjab-preview-feroz-shah-kotla">Daredevils bank on home leg for change in fortune</a></h4>
+      <div class="fakeimg"><img alt="img" class="img-responsive img-rounded" src="http://i.cricketcb.com/i/news/fth/595x332/stories/2018/apr/22//prv_1524415600.jpeg"></div><br>
+      <h4 style="color: blue"><a href="http://www.cricbuzz.com/cricket-news/101458/ipl-20-good-ol-eight-and-the-men-who-lead-them-ipl-2018-captains-in-focus-tournament-preview-by-harsha-bhogle">IPL 2.0: Good ol' Eight, and the men who lead them</a></h4>
+      <div class="fakeimg"><img alt="img" class="img-responsive img-rounded" src="http://i.cricketcb.com/i/news/fth/980x654/stories/2018/apr/4//prv_1522836211.jpeg"></div><br>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p><a href="https://www.facebook.com/pradeepkumar.burugu">follow me</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
